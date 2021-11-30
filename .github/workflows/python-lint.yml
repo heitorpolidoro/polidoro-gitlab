@@ -17,4 +17,5 @@ jobs:
         uses: heitorpolidoro/flake8-with-PR-comments@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+        with:
+          flake_parameters: --max-line-length=127
